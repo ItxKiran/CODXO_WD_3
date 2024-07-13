@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css"> <!-- Adjust this line if you have a separate stylesheet -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2 style="margin-left: 20px;">Weather</h2>
+      <div class="weather-input">
+        <input type="text" name="city" id="city_input" placeholder="Enter City Name">
+        <button type="button" id="searchBtn">
+          <i class="fas fa-search"></i> Search
+        </button>
+        <button type="button" id="locationBtn">
+          <i class="fas fa-map-marker-alt"></i> Current Location
+        </button>
+      </div>
+    </div>
+    <div class="weather-data">
+      <div class="weather-left">
+        <div class="card">
+          <div class="current-weather">
+            <div class="details">
+              <p>Now</p>
+              <h2>___&deg;C</h2> 
+              <p>_______</p> 
+            </div>
+            <div class="weather-icon">
+              <i class="fa fa-cloud" style="font-size:36px; color: #fff;"></i>
+            </div>
+            
+          </div>
+        
+          <div class="card-footer">
+            <p><i class="far fa-calendar-alt"></i> <span id="date">&nbsp;</span></p> 
+            <p><i class="fas fa-map-marker-alt"></i> <span id="location">&nbsp;</span></p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
